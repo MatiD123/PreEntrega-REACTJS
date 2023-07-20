@@ -1,17 +1,17 @@
+import CartWidget from "./CartWidget"
+import "./styles.css"
+
 function Navbar() {
     return (
-        <header>
-            <div className="container-nav">
-                <h1 className="titulo">Bernal Wood</h1>
-                <nav>
-                    <ul>
-                        <li>Catalogo</li>
-                        <li>Contacto</li>
-                    </ul>
-
-                </nav>
+        <nav className="navbar">
+            <div>
+                <button>Inicio</button>
+                <button>Catalogo</button>
+                <button>Contacto</button>
             </div>
-        </header>
-    )
+
+            <CartWidget />
+        </nav>
+    );
 }
 export default Navbar
